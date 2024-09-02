@@ -67,6 +67,12 @@ with open("movies.txt", mode="w",encoding="utf-8") as file:
 ```file.write(f"{movie}\n")```: Writes each movie title to a new line in the text file.
 ```with```: Ensures that the file is properly closed after writing, even if an error occurs.
 
+<b>Location of the Output:</b>
+
+The output of this script, which is a list of movie titles, is stored in a text file named movies.txt.
+The movies.txt file is saved in the same directory where the script is run.
+Each movie title is written on a new line in this file, with the titles listed in reverse order compared to how they appeared on the original webpage.
+If you run the script, you should find movies.txt in the current working directory.
 <h2>Summary</h2>
 
 This script retrieves the HTML content of a webpage containing a list of the best movies, extracts the movie titles using BeautifulSoup, reverses the order of the titles, and saves them to a text file named movies.txt.
